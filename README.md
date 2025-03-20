@@ -1,6 +1,5 @@
-
 📌 Hand Landmark & Joint Detection Using Computer Vision
-This project implements real-time hand landmark and full-body joint detection using OpenCV, MediaPipe, and Streamlit. It supports real-time video capture from a webcam and visualizes key hand and body joints with labeled annotations.
+This project implements real-time hand landmark and full-body joint detection using OpenCV, MediaPipe, and Streamlit. It captures video from a webcam and visualizes key hand landmarks and body joints with labeled annotations.
 
 🚀 Project Structure
 bash
@@ -13,9 +12,9 @@ Edit
 │── README.md                    # Project Documentation  
 │── requirements.txt              # Dependencies for installation  
 🎯 Project Overview
-main.ipynb: Contains the core hand & body joint detection logic using MediaPipe & OpenCV.
-project.py: A Streamlit-based real-time interface for detecting hand landmarks and body joints.
-requirements.txt: Contains all necessary dependencies to set up the environment.
+main.ipynb → Contains the core hand & body joint detection logic using MediaPipe & OpenCV.
+project.py → A Streamlit-based real-time interface for detecting hand landmarks and body joints.
+requirements.txt → Lists all necessary dependencies for setting up the environment.
 🛠️ Installation & Setup
 1️⃣ Clone the Repository
 sh
@@ -28,8 +27,10 @@ sh
 Copy
 Edit
 python -m venv env  
-source env/bin/activate   # On Mac/Linux  
-env\Scripts\activate      # On Windows  
+# Activate on Mac/Linux  
+source env/bin/activate  
+# Activate on Windows  
+env\Scripts\activate  
 3️⃣ Install Dependencies
 sh
 Copy
@@ -41,23 +42,36 @@ sh
 Copy
 Edit
 jupyter notebook
-Open main.ipynb and run all cells.
-
+Open main.ipynb and run all cells to execute the code.
 ▶️ Run the Streamlit Application
 sh
 Copy
 Edit
 streamlit run project.py
-This will launch a web-based interface to detect hand landmarks and body joints in real time.
-
+This will launch a web-based interface for real-time hand landmark and body joint detection.
+🧠 Thinking About the Workflow
+Step 1: Capture Real-Time Video
+Open webcam using cv2.VideoCapture(0).
+Step 2: Process the Frame
+Convert to RGB format using cv2.cvtColor().
+Apply MediaPipe Holistic Model using mp_holistic.process().
+Step 3: Detect Hand Landmarks
+If results.right_hand_landmarks exists, draw points.
+Label finger tips (Thumb, Index, Middle, Ring, Pinky).
+Step 4: Detect Body Joints
+If results.pose_landmarks exists, draw keypoints.
+Label major joints (Shoulders, Elbows, Wrists, Hips, Knees, Ankles).
+Step 5: Display Processed Frame
+Convert back to RGB format using cv2.cvtColor().
+Show in Streamlit using video_placeholder.image().
 📌 Key Features
-✔️ Real-time detection of hand landmarks and body joints using a webcam
-✔️ Uses MediaPipe's Holistic Model for full-body detection
-✔️ Streamlit UI for interactive visualization
-✔️ Labels finger tips, body joints, and draws connections between them
+✔️ Real-time detection of hand landmarks and body joints using a webcam.
+✔️ Utilizes MediaPipe's Holistic Model for full-body detection.
+✔️ Streamlit UI for interactive visualization.
+✔️ Labeled finger tips & body joints with clear annotations.
+✔️ Supports additional model integration (custom hand pose model).
 
 📦 Dependencies (requirements.txt)
-txt
 Copy
 Edit
 opencv-python  
