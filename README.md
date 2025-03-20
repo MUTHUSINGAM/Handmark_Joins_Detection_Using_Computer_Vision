@@ -86,7 +86,7 @@ pillow
 numpy  
 ```
 ## Model Output Image in Streamlit:
-##Image 1 with Full Body
+## Image 1 with Full Body
 
 ![image](https://github.com/user-attachments/assets/2a289c90-f2fa-4012-b283-da15d4f3b3e4)
 
