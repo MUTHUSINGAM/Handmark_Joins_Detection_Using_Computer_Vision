@@ -85,6 +85,17 @@ streamlit
 pillow  
 numpy  
 ```
+## Model Output Image in Streamlit:
+##Image 1 with Full Body
+
+![image](https://github.com/user-attachments/assets/2a289c90-f2fa-4012-b283-da15d4f3b3e4)
+
+
+![WhatsApp Image 2025-03-20 at 18 51 40_29a66527](https://github.com/user-attachments/assets/f895508e-0f3e-403c-bbfc-5d918fcd3702)
+
+## Image 2 with handmark with fingers name
+![WhatsApp Image 2025-03-20 at 18 53 57_95eca945](https://github.com/user-attachments/assets/dc539880-3a7a-45dc-b0ec-8c242a13531c)
+
 
 ---
 
