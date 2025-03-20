@@ -1,6 +1,4 @@
-It looks like you want the project information to be formatted in a code-like box similar to the one in the image. Here’s how it would look:
 
-```plaintext
 📌 Hand Landmark & Joint Detection Using Computer Vision
 This project implements real-time hand landmark and full-body joint detection using OpenCV, MediaPipe, and Streamlit. It captures video from a webcam and visualizes key hand landmarks and body joints with labeled annotations.
 
