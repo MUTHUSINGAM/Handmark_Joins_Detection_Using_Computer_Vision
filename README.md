@@ -16,8 +16,14 @@ This project captures video from a webcam and visualizes key hand landmarks and 
 ```
 
 ### 🎯 Project Overview
-- **`main.ipynb`**: Core hand & body joint detection logic using MediaPipe & OpenCV.
-- **`project.py`**: A Streamlit-based real-time interface for detecting hand landmarks and body joints.
+- **`main.ipynb`**: 
+  - Contains core hand & body joint detection logic using MediaPipe & OpenCV.
+  - Captures and processes real-time video for detecting and annotating landmarks.
+  - Used for debugging and testing the detection pipeline.
+- **`project.py`**: 
+  - Implements a Streamlit-based web interface for real-time visualization.
+  - Provides an interactive UI for running landmark detection.
+  - Displays processed frames with annotated landmarks in a user-friendly format.
 - **`requirements.txt`**: Lists all necessary dependencies for setting up the environment.
 
 ---
@@ -82,7 +88,3 @@ numpy
 
 ---
 
-## 📜 License  
-This project is open-source and available under the **MIT License**.
-
-🔗 **Contributions are welcome!** Feel free to fork, improve, and submit a PR. 🚀
